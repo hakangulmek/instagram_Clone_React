@@ -1,10 +1,15 @@
-import MainPage from "./AnaSayfa/MainPage";
+import Routers from "./Router/Router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="w-full h-full">
-      <MainPage />
-    </div>
+    <Router>
+      <Routes>
+        {Routers.map((route, index) => (
+          <Route key={index} path={route.path} element={route.Element} />
+        ))}
+      </Routes>
+    </Router>
   );
 }
 
