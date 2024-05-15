@@ -19,31 +19,33 @@ function formView() {
         </a>
         <div className=" grid gap-y-2">
           <label className="block relative">
-            <small className="absolute top-1/2 left-[9px] text-xs cursor-text pointer-events-none text-gray-400 -translate-y-1/2  visible peer-invalid:invisible">
-              Telefon Numarası,kullanıcı adı veya e-posta
-            </small>
             <input
+              required={true}
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className=" w-full px-2 outline-none focus:border-gray-400 h-[38px] border rounded-sm bg-zinc-50  valid:pt-[10px] peer"
+              className=" w-full px-2 outline-none focus:border-gray-400 h-[38px]  border rounded-sm bg-zinc-50 valid:pt-[10px] peer"
               type="text"
             />
+            <small className="absolute top-1/2 left-[9px] text-xs cursor-text pointer-events-none text-gray-400 -translate-y-1/2  peer-valid:text-[10px] peer-valid:font-sans peer-valid:top-2.5">
+              Telefon Numarası,kullanıcı adı veya e-posta
+            </small>
           </label>
           <label className="block relative">
-            <small className="absolute top-1/2 left-[9px] text-xs cursor-text pointer-events-none text-gray-400 -translate-y-1/2  visible peer-invalid:invisible">
-              Şifre
-            </small>
             <input
+              required={true}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className=" w-full px-2 outline-none focus:border-gray-400 h-[38px] border rounded-sm bg-zinc-50  valid:pt-[10px] peer"
+              className=" w-full px-2 outline-none focus:border-gray-400 h-[38px] border rounded-sm bg-zinc-50 valid:pt-[10px] peer "
               type="password"
             />
+            <small className="absolute top-1/2 left-[9px] text-xs cursor-text pointer-events-none text-gray-400 -translate-y-1/2 peer-valid:text-[10px] peer-valid:font-sans peer-valid:top-2.5 ">
+              Şifre
+            </small>
           </label>
           <button
             type="submit"
             disabled={!enable}
-            className="h-[30px] rounded bg-brand font-medium mt-1 text-white text-sm disabled:opacity-50"
+            className="h-[30px] rounded bg-brand font-medium mt-1 text-white text-sm disabled:opacity-50 hover:bg-blue-700 "
           >
             Giriş Yap
           </button>

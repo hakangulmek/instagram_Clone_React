@@ -615,6 +615,10 @@ html,
   margin-right: 2rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -625,10 +629,6 @@ html,
 
 .mt-\[27px\] {
   margin-top: 27px;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .block {
@@ -765,12 +765,12 @@ html,
   background-position: top left -46px;
 }
 
-.p-\[40px\] {
-  padding: 40px;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-\[40px\] {
+  padding: 40px;
 }
 
 .px-2 {
@@ -817,6 +817,11 @@ html,
   font-weight: 600;
 }
 
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
 .text-facebook {
   --tw-text-opacity: 1;
   color: rgb(56 81 133 / var(--tw-text-opacity));
@@ -830,21 +835,6 @@ html,
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -874,13 +864,88 @@ html,
   padding-top: 10px;
 }
 
+.valid\:pt-3:valid {
+  padding-top: 0.75rem;
+}
+
+.valid\:pb-\[10px\]:valid {
+  padding-bottom: 10px;
+}
+
+.valid\:pt-\[12px\]:valid {
+  padding-top: 12px;
+}
+
+.valid\:text-\[10px\]:valid {
+  font-size: 10px;
+}
+
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .focus\:border-gray-400:focus {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.focus\:bg-blue-800:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
+}
+
+.peer:valid ~ .peer-valid\:top-2 {
+  top: 0.5rem;
+}
+
+.peer:valid ~ .peer-valid\:top-2\.5 {
+  top: 0.625rem;
+}
+
+.peer:valid ~ .peer-valid\:top-\[2\.5px\] {
+  top: 2.5px;
+}
+
+.peer:valid ~ .peer-valid\:p-\[14px_0_2px_8px\] {
+  padding: 14px 0 2px 8px;
+}
+
+.peer:valid ~ .peer-valid\:pt-\[14px_0_2px_8px\] {
+  padding-top: 14px 0 2px 8px;
+}
+
+.peer:valid ~ .peer-valid\:pt-\[10px\] {
+  padding-top: 10px;
+}
+
+.peer:valid ~ .peer-valid\:pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
+.peer:valid ~ .peer-valid\:pb-\[12px\] {
+  padding-bottom: 12px;
+}
+
+.peer:valid ~ .peer-valid\:font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.peer:valid ~ .peer-valid\:font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.peer:valid ~ .peer-valid\:text-\[10px\] {
+  font-size: 10px;
 }
 
 .peer:invalid ~ .peer-invalid\:invisible {
